@@ -63,17 +63,17 @@ export function Meeting() {
     [0, 0.45, 1],
   );
 
-  const finalMessageOpacity = useTransform(
-    scrollYProgress,
-    [0.7, 0.84, 1],
-    [0, 0.78, 1],
-  );
+ const finalMessageOpacity = useTransform(
+  scrollYProgress,
+  [0.55, 0.72, 0.9],
+  [0, 0.8, 1],
+);
 
-  const finalMessageY = useTransform(
-    scrollYProgress,
-    [0.7, 0.9],
-    [55, 0],
-  );
+const finalMessageY = useTransform(
+  scrollYProgress,
+  [0.55, 0.75],
+  [35, 0],
+);
 
   return (
     <Container ref={containerRef}>
